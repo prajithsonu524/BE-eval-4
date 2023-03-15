@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed:up": "sequelize db:seed:all",
+    "db:up": "sequelize db:migrate",
+    "start": "npm run db:up && npm run seed:up && npm run start:server",
+    "db:seedup": "npm run db:up && npm run seed:up "
+
   },
   "keywords": [],
   "author": "",

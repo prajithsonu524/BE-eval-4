@@ -1,4 +1,5 @@
 /* eslint-disable no-prototype-builtins */
+
 const { content_types, collection } = require('../../database/models');
 
 const getAllContentTypes = async () => {

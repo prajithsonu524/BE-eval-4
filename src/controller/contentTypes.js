@@ -1,3 +1,4 @@
+
 const Services = require('../services/contentTypes');
 
 const getAllContentTypes = async (req, res) => {
