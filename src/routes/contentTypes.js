@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { authenticator } = require('../middleware/authenticator');
 
 const { getAllContentTypes, createContentType, updateFieldName, addField, deleteField } = require('../controller/contentTypes');
 
